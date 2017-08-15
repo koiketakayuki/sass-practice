@@ -1,3 +1,28 @@
-.form {
-  height: 30px;
+@import '../util/margin';
+
+$text-form-height: 30px;
+$form-container-space: 20px;
+$form-group-space-y: 10px;
+
+.text-form {
+  width: 100%;
+  height: $text-form-height;
+}
+
+.form-container {
+  padding: $form-container-space;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: $form-group-space-y;
+
+  input {
+    margin-left: $form-group-space-y;
+  }
+}
+
+.login-form {
+  width: 400px;
+  @include margin-auto;
 }

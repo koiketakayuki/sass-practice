@@ -1,5 +1,10 @@
 @import 'font';
 @import 'theme';
 @import 'util/margin';
+@import 'util/text-align';
+@import 'layout/common';
+@import 'layout/header';
+@import 'layout/footer';
 @import 'component/button';
-@import 'component/form'
+@import 'component/card';
+@import 'component/form';

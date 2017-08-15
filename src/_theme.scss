@@ -2,7 +2,7 @@ $primary-color: #007bff;
 $warning-color: #ff0000;
 $success-color: #449d44;
 
-$string-light: #efefef;
+$string-light: #ffffff;
 $string-dark: #333333;
 
 $button-colors: (
@@ -10,3 +10,8 @@ $button-colors: (
   success: $success-color,
   warning: $warning-color,
 );
+
+@mixin primary {
+  background: $primary-color;
+  color: $string-light;
+}

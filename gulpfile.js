@@ -44,14 +44,14 @@ gulp.task('browser-sync-reload', () => browserSync.reload());
 /* 開発用のタスク */
 gulp.task('default',['browser-sync'], () => {
   /* 成果物に変化がある場合はブラウザをリロード */
-  gulp.watch(path.dist + '**/*.*',['browser-sync-reload']);
+  gulp.watch(path.dist + '**/*.*', ['browser-sync-reload']);
 
   /* scssに変化があるならリコンパイル */
-  gulp.watch(path.src + '**/*.scss',['scss']);
+  gulp.watch(path.src + '**/*', ['scss']);
 });
 
 /* プロダクション用のcssのビルド */
-gulp.task('build', function() {
+gulp.task('build', () => {
   return gulp.src(path.src + 'main.scss')
     .pipe(plumber(plumberConfig))
     .pipe(sass({ outputStyle: 'compressed' }))

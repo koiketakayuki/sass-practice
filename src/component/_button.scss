@@ -11,7 +11,7 @@
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: .5rem 1rem;
+  padding: 5px 10px;
   font-weight: $font-weight-bold;
 
   &:not(:hover) {
@@ -22,6 +22,7 @@
 .button--large {
   font-size: $font-size-large;
   font-weight: $font-weight-bold;
+  padding: 10px 30px;
 }
 
 @each $name, $color in $button-colors {
