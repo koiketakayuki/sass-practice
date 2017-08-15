@@ -20,7 +20,7 @@ const plumberConfig = {
   }),
 };
 
-// 開発用scssコンパイル
+/* 開発用scssコンパイル */
 gulp.task('scss', function() {
   return gulp.src(path.src + 'main.scss')
     .pipe(plumber(plumberConfig))
