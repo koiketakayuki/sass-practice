@@ -1,0 +1,12 @@
+$primary-color: #007bff;
+$warning-color: #ff0000;
+$success-color: #449d44;
+
+$string-light: #efefef;
+$string-dark: #333333;
+
+$button-colors: (
+  primary: $primary-color,
+  success: $success-color,
+  warning: $warning-color,
+);
