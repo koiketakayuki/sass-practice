@@ -1,0 +1,17 @@
+$grid-gutter-space: 1em;
+
+.grid {
+  display: flex;
+}
+
+.grid-cell {
+  flex: 1;
+}
+
+/* With gutters */
+.grid--gutters {
+  margin: -$grid-gutter-space 0 0 -$grid-gutter-space;
+}
+.grid--gutters > .grid-cell {
+  padding: $grid-gutter-space 0 0 $grid-gutter-space;
+}
