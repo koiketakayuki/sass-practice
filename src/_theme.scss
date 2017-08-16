@@ -1,9 +1,10 @@
 $primary-color: #007bff;
-$warning-color: #ff0000;
+$warning-color: #f00;
 $success-color: #449d44;
+$string-light: #fff;
+$string-dark: #333;
+$header-color: #2a3342;
 
-$string-light: #ffffff;
-$string-dark: #333333;
 
 $button-colors: (
   primary: $primary-color,
@@ -12,6 +13,6 @@ $button-colors: (
 );
 
 @mixin primary {
-  background: $primary-color;
   color: $string-light;
+  background: $primary-color;
 }

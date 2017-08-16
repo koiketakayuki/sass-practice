@@ -1,8 +1,7 @@
 @import '../util/margin';
-
 $text-form-height: 30px;
 $form-container-space: 20px;
-$form-group-space-y: 10px;
+$form-group-space-y: 15px;
 
 .text-form {
   width: 100%;
@@ -14,15 +13,12 @@ $form-group-space-y: 10px;
 }
 
 .form-group {
-  text-align: left;
   margin-bottom: $form-group-space-y;
-
-  input {
-    margin-left: $form-group-space-y;
-  }
+  text-align: left;
 }
 
 .login-form {
   width: 400px;
+
   @include margin-auto;
 }

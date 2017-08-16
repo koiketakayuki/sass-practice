@@ -3,26 +3,38 @@
   background: $background-color;
 }
 
-.button {
-  display: inline-block;
-  color: $string-dark;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: 5px 10px;
-  font-weight: $font-weight-bold;
+$button-icon-space: .5rem;
+$button-inactive-opacity: .75;
 
-  &:not(:hover) {
-    opacity: .75;
+.button {
+  font-weight: $font-weight-bold;
+  display: inline-block;
+  padding: .5rem 1.5rem;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: $string-dark;
+  border: 1px solid transparent;
+  &:hover {
+    opacity: $button-inactive-opacity;
+  }
+
+  & > i {
+    margin-left: -$button-icon-space;
+    margin-right: $button-icon-space;
   }
 }
 
 .button--large {
   font-size: $font-size-large;
   font-weight: $font-weight-bold;
-  padding: 10px 30px;
+  padding: 1.0rem 3.0rem;
+}
+
+.loading {
+  opacity: $button-inactive-opacity;
+  cursor: not-allowed;
 }
 
 @each $name, $color in $button-colors {

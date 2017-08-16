@@ -1,0 +1,32 @@
+.panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border: 1px solid rgba(0, 0, 0, .125);
+  background-clip: border-box;
+}
+
+.panel-header {
+  margin-bottom: 0;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+  background-color: #f7f7f9;
+  font-size: 1.6rem;
+}
+
+.panel-control {
+  float: right;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  border-left: 0;
+}
+
+.panel-block {
+  padding: 20px;
+  flex: 1 1 auto;
+  font-size: 1.4rem;
+}

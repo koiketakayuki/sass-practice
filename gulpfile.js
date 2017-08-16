@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const postcss = require('gulp-postcss');
-const cssnext = require('postcss-cssnext');
+const csscomb = require('gulp-csscomb');
+const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
@@ -20,13 +20,19 @@ const plumberConfig = {
   }),
 };
 
+gulp.task('csscomb', () => {
+  return gulp.src(path.src + '**/*.scss')
+    .pipe(csscomb())
+    .pipe(gulp.dest(path.src));
+});
+
 /* 開発用scssコンパイル */
-gulp.task('scss', function() {
+gulp.task('scss', () => {
   return gulp.src(path.src + 'main.scss')
     .pipe(plumber(plumberConfig))
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'expanded' }))
-    .pipe(postcss([cssnext()]))
+    .pipe(autoprefixer())
     .pipe(sourcemaps.write(path.sourcemap))
     .pipe(gulp.dest(path.dist))
 });
@@ -47,7 +53,7 @@ gulp.task('default',['browser-sync'], () => {
   gulp.watch(path.dist + '**/*.*', ['browser-sync-reload']);
 
   /* scssに変化があるならリコンパイル */
-  gulp.watch(path.src + '**/*', ['scss']);
+  gulp.watch(path.src + '**/*.scss', ['scss']);
 });
 
 /* プロダクション用のcssのビルド */
@@ -55,6 +61,6 @@ gulp.task('build', () => {
   return gulp.src(path.src + 'main.scss')
     .pipe(plumber(plumberConfig))
     .pipe(sass({ outputStyle: 'compressed' }))
-    .pipe(postcss([cssnext()]))
+    .pipe(autoprefixer())
     .pipe(gulp.dest(path.dist))
 });
