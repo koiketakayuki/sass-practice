@@ -1,3 +1,4 @@
+@import 'reset';
 @import 'font';
 @import 'theme';
 @import 'util/margin';
@@ -6,16 +7,11 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/grid';
-@import 'layout/info-block';
+@import 'layout/info';
 @import 'component/button';
 @import 'component/panel';
 @import 'component/form';
 
 html {
-  font-size: 62.5%;
   font-family: 'Noto Sans Japanese', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
 }

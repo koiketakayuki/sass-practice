@@ -4,11 +4,21 @@ $success-color: #449d44;
 $string-light: #fff;
 $string-dark: #333;
 $header-color: #2a3342;
+
+.success {
+  color: $success-color;
+}
+
+.warning {
+  color: $warning-color;
+}
+
 $button-colors: (
   primary: $primary-color,
   success: $success-color,
   warning: $warning-color,
 );
+
 
 @mixin primary {
   color: $string-light;

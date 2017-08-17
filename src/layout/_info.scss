@@ -1,0 +1,32 @@
+$info-color: #828587;
+$info-font-weight: 900;
+$info-sub-font-weight: $info-font-weight - 200;
+$info-space-y: 1.0rem;
+
+.info {
+  color: $info-color;
+}
+
+.info-top {
+  font-size: 1.8rem;
+  margin-bottom: $info-space-y;
+}
+
+.info-main {
+  font-size: 6.6rem;
+  text-align: center;
+  margin-bottom: $info-space-y;
+  font-weight: $info-font-weight;
+
+  .unit {
+    font-size: 4.4rem;
+  }
+}
+
+.info-sub {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: $info-sub-font-weight;
+  letter-spacing: -.01em;
+  margin-top: 1px;
+}
