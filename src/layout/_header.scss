@@ -1,6 +1,34 @@
 @import '../theme';
+$header-row-height: 6.4rem;
 
 .header {
   height: 100px;
+}
+
+.header-row {
+  width: 100%;
+  display: flex;
+}
+
+.header-nav {
+  width: 100%;
+  padding: 0 2.0rem;
+  height: $header-row-height;
   background: $header-color;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: $header-row-height;
+    padding: 0 16px;
+    color: #fff;
+    box-sizing: border-box;
+
+    &:hover {
+      opacity: .75;
+      background: lighten($header-color, 30%);
+    }
+  }
 }

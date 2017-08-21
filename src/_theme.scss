@@ -1,12 +1,32 @@
-$primary-color: #007bff;
+$primary-color: #44ab52;
 $warning-color: #f00;
-$success-color: #449d44;
+$success-color: #fd9ffd;
+$little-success-color: #ff7f7e;
+$normal-color: #ffe922;
+$failure-color: #8040ff;
+$little-failure-color: #5ec4f1;
 $string-light: #fff;
 $string-dark: #333;
-$header-color: #2a3342;
+$header-color: #44ab52;
 
 .success {
   color: $success-color;
+}
+
+.little-success {
+  color: $little-success-color;
+}
+
+.normal {
+  color: $normal-color;
+}
+
+.little-failure {
+  color: $little-failure-color;
+}
+
+.failure {
+  color: $failure-color;
 }
 
 .warning {

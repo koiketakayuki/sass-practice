@@ -3,18 +3,9 @@ body {
 }
 
 .main {
-  padding: 50px 20px;
-  display: flex;
+  padding: 40px 20px;
 }
 
-.left-col {
-  flex: 0 0 20%;
-}
-
-.main-col {
-  flex: 1;
-}
-
-.right-col {
-  flex: 0 0 20%;
+.container {
+  padding: 20px 20px;
 }

@@ -3,6 +3,7 @@
 @import 'theme';
 @import 'util/margin';
 @import 'util/text-align';
+@import 'util/_fa-arrow-extension';
 @import 'layout/common';
 @import 'layout/header';
 @import 'layout/footer';
@@ -11,6 +12,7 @@
 @import 'component/button';
 @import 'component/panel';
 @import 'component/form';
+@import 'heading';
 
 html {
   font-family: 'Noto Sans Japanese', sans-serif;

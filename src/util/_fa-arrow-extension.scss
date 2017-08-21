@@ -1,0 +1,17 @@
+@import '../mixin/_rotate';
+
+.fa-arrow-up-right {
+  @include rotate(-45deg);
+
+  &:before {
+    content: '\f061';
+  }
+}
+
+.fa-arrow-down-right {
+  @include rotate(45deg);
+
+  &:before {
+    content: '\f061';
+  }
+}
